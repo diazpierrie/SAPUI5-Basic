@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "none",
 
-    "noEmit": true,
+    "noEmit": false,
 
     "checkJs": true,
 
