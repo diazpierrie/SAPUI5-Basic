@@ -1,7 +1,7 @@
 {
   "_version": "1.48.0",
   "sap.app": {
-    "id": "logaligroup.invoices",
+    "id": "logaligroup.SAPUI5",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.8.3",
-      "toolsId": "443d277c-9e15-4976-beab-1fb020a616ea"
+      "toolsId": "cf43ee8f-a8c7-409d-a79b-76f782745b51"
     },
     "dataSources": {
       "mainService": {
@@ -66,7 +66,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "logaligroup.invoices.i18n.i18n"
+          "bundleName": "logaligroup.SAPUI5.i18n.i18n"
         }
       },
       "": {
@@ -87,32 +87,32 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "logaligroup.invoices.view",
+        "viewPath": "logaligroup.SAPUI5.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
       },
       "routes": [
         {
-          "name": "RouteApp",
+          "name": "RouteView1",
           "pattern": ":?query:",
           "target": [
-            "TargetApp"
+            "TargetView1"
           ]
         }
       ],
       "targets": {
-        "TargetApp": {
+        "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "App",
-          "viewName": "App"
+          "viewId": "View1",
+          "viewName": "View1"
         }
       }
     },
     "rootView": {
-      "viewName": "logaligroup.invoices.view.App",
+      "viewName": "logaligroup.SAPUI5.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

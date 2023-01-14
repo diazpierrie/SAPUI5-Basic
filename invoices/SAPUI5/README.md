@@ -1,15 +1,15 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Fri Jan 13 2023 06:24:51 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Sat Jan 14 2023 01:34:52 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-freestyle|
 |**App Generator Version**<br>1.8.3|
-|**Generation Platform**<br>CLI|
+|**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>simple|
 |**Service Type**<br>None|
 |**Service URL**<br>N/A
-|**Module Name**<br>invoices|
-|**Application Title**<br>Invoices List|
+|**Module Name**<br>sapui5|
+|**Application Title**<br>Invoices|
 |**Namespace**<br>logaligroup|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.109.3|
@@ -17,9 +17,9 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## invoices
+## sapui5
 
-Invoices List
+Invoice List
 
 ### Starting the generated app
 
