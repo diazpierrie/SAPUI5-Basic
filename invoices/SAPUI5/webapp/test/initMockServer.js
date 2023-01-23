@@ -9,6 +9,7 @@ sap.ui.define([
   // initialize the mock server
   aMockservers.push(mockserver.init());
 
+  // @ts-ignore
   Promise.all(aMockservers).catch(function (oError) {
       MessageBox.error(oError.message);
   }).finally(function () {
