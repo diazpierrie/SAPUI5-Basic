@@ -1,38 +1,36 @@
 //@ts-nocheck
-sap.ui.define(
-  [
-    "sap/ui/test/opaQunit",
-    "./pages/HelloPanel",
+sap.ui.define([
     "logaligroup/SAPUI5/localService/mockserver",
-  ],
-  /**
-   *
-   * @param {sap.ui.test.opaQunit} opaQunit
-   */
-  function (opaQunit, mockserver) {
-    "use strict";
+    "sap/ui/test/opaQunit",
+    "./pages/HelloPanel"
+],
+    /**
+     * @param {typeof sap.ui.test.opaQunit} opaQunit 
+     */
+    function (mockserver, opaQunit) {
 
-    QUnit.module("Navigation");
+        QUnit.module("Navigation");
 
-    opaQunit("Should open the hello dialog", function (Given, When, Then) {
-      //initialize mock server
-      mockserver.init();
+        opaQunit("Should open the Hello Dialog", function(Given, When, Then){
+            
+            //initialize the mock server 
+            mockserver.init();
 
-      //Arrangements
-      Given.iStartMyUIComponent({
-        componentConfig: {
-          name: "logaligroup.SAPUI5",
-        },
-      });
+            //Arrangements
+            Given.iStartMyUIComponent({
+                componentConfig: {
+                    name: "logaligroup.SAPUI5"
+                }
+            });
 
-      //Actions
-      When.onTheAppPage.iSayHelloDialogButton();
+            //Actions
+            When.onTheAppPage.iSayHelloDialogButton();
 
-      //Assertions
-      Then.onTheAppPage.iSeeTheHelloDialog();
+            //Assertions
+            Then.onTheAppPage.iSeeTheHelloDialog();
 
-      //Cleanup
-      Then.iTeardownMyApp();
+            //Cleanup
+            Then.iTeardownMyApp();
+
+        });
     });
-  }
-);

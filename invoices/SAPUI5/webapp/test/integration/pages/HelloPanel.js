@@ -5,7 +5,6 @@ sap.ui.define(
    * @param {typeof sap.ui.test.actions.Press} Press
    */
   function (Opa5, Press) {
-    "use strict";
 
     Opa5.createPageObjects({
       onTheAppPage: {
@@ -16,7 +15,7 @@ sap.ui.define(
               viewName: "logaligroup.SAPUI5.view.HelloPanel",
               actions: new Press(),
               errorMessage:
-                "Did not fiind the 'Say Hello Dialog Button' on the HelloPanel view",
+                "Did not find the 'Say Hello Dialog Button' on the HelloPanel view",
             });
           },
         },
