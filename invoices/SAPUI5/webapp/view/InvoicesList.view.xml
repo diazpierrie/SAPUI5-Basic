@@ -1,10 +1,5 @@
 <mvc:View controllerName="logaligroup.SAPUI5.controller.InvoicesList" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-    <List
-        id="invoiceList"
-        headerText="{i18n>invoiceListTitle}"
-        class="sapUiResponsiveMargin"
-        width="auto"
-        items="{ path : 'northwind>/Invoices',
+    <List id="invoiceList" headerText="{i18n>invoiceListTitle}" class="sapUiResponsiveMargin" width="auto" items="{ path : 'northwind>/Invoices',
                  sorter : {path : 'ShipperName',
                            group : true }}">
         <headerToolbar>
@@ -23,8 +18,9 @@
                           formatOptions: { showMeasure : false }}"
                 numberUnit="{currency>/usd}"
                 numberState="{= ${northwind>ExtendedPrice} > 9 ? 'Success' : 'Error'}"
-            >
-            </ObjectListItem>
+                type="Navigation"
+                press="navigateToDetails"
+            />
         </items>
     </List>
 </mvc:View>
